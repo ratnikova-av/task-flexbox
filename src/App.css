@@ -4,3 +4,25 @@ body,
     height: 100%;
     margin: 0;
 }
+
+.flex-container{
+    display: flex;
+    height: 300px;/*высота*/
+    width: 700px;/*ширина*/
+    justify-content: space-between;
+    }
+.flex-container div{
+    height: 100px;
+    width: 100px;
+    background-color: #DAA520;
+    border-radius: 50%;
+}
+.flex-container div:nth-child(even) {
+    align-self: center;
+ } 
+ .flex-container div:nth-child(odd) {
+    align-self: flex-start;
+ }
+ .flex-container div:nth-child(3) {
+    align-self: flex-end;
+ }
